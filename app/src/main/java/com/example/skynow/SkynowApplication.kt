@@ -7,9 +7,11 @@ import android.content.Context
 class SkynowApplication : Application() {
 
     companion object {
+
+        const val TOKEN = "1S7FeiWzqn1heFFg"
+
         @SuppressLint("StaticFieldLeak")
         lateinit var context: Context
-        const val TOKEN = "1S7FeiWzqn1heFFg"
     }
 
     override fun onCreate() {
