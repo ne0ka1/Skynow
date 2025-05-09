@@ -10,14 +10,14 @@ import retrofit2.http.Query
 
 interface WeatherService {
 
-    @GET("v2.5/{lng},{lat}/realtime.json")
+    @GET("v2.6/{lng},{lat}/realtime.json")
     fun getRealtimeWeather(
         @Path("lng") lng: String,
         @Path("lat") lat: String,
         @Query("token") token: String = SkynowApplication.TOKEN
     ): Call<RealtimeResponse>
 
-    @GET("v2.5/{lng},{lat}/daily.json")
+    @GET("v2.6/{lng},{lat}/daily.json")
     fun getDailyWeather(
         @Path("lng") lng: String,
         @Path("lat") lat: String,
